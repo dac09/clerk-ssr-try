@@ -1,13 +1,20 @@
 # README
 
-To run:
-
-Add `CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` to .env
+## To run locally:
 
 1. `yarn install`
 2. `yarn rw dev`
 
+
+## To run on gitpod
+Click this link -> https://gitpod.io/new/#https://github.com/dac09/clerk-ssr-try
+
 Navigate to localhost:8910 and you will see:
+
+
+> Note: you do not need to configure the env vars `CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY`,
+> because the error actually happens before any of the Clerk related code is run!
+
 
 ```
 /Users/dac09/Experiments/clerk-ssr-try/node_modules/@clerk/clerk-react/dist/esm/index.js:1
