@@ -11,6 +11,7 @@
     ]
   },
   "dependencies": {
+    "@apollo/experimental-nextjs-app-support": "0.0.0-commit-b8a73fe",
     "@clerk/clerk-react": "^4",
     "@redwoodjs/auth-clerk-web": "7.0.0-canary.467+75174ba90",
     "@redwoodjs/forms": "7.0.0-canary.467",

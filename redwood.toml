@@ -21,3 +21,6 @@
   open = true
 [notifications]
   versionUpdates = ["latest"]
+
+[experimental.streamingSsr]
+  enabled = true

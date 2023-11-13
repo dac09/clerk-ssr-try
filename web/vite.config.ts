@@ -11,6 +11,9 @@ import redwood from '@redwoodjs/vite'
 
 const viteConfig: UserConfig = {
   plugins: [redwood()],
+  optimizeDeps: {
+    force: true,
+  },
 }
 
 export default defineConfig(viteConfig)
