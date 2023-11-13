@@ -7,7 +7,7 @@ import { Link, routes } from '@redwoodjs/router'
 import { useAuth } from 'src/auth'
 
 const BlogLayout = ({ children }: BlogLayoutProps) => {
-  const { logOut, isAuthenticated } = useAuth()
+  const { logOut, isAuthenticated, logIn } = useAuth()
 
   return (
     <>
@@ -59,12 +59,12 @@ const BlogLayout = ({ children }: BlogLayoutProps) => {
             )}
             {!isAuthenticated && (
               <li>
-                <Link
+                <button
                   className="rounded px-4 py-2 transition duration-100 hover:bg-blue-600"
-                  to={routes.login()}
+                  onClick={logIn}
                 >
                   Log In
-                </Link>
+                </button>
               </li>
             )}
           </ul>
